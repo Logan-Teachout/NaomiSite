@@ -3,7 +3,6 @@ body {
     margin: 0px;
     font-family: Raleway;
     font-weight: 300;
-    font-size: 17px;
 }
 
 /* Header Div Stuff */
@@ -11,7 +10,7 @@ body {
 .heady {
     background-color: #FFF;
     margin: 15px 0px 15px 0px;
-    height: 120px;
+    height: 9vw;
     font-family: Arial;
     font-weight: 700;
     display: flex;
@@ -29,8 +28,8 @@ body {
 }
 
 .headylogo {
-    width: 300px;
-    margin: 0px 130px 0px 130px;
+    width: 20vw;
+    margin: 0px 10vw 0px 10vw;
     object-fit: fill;
 }
 
@@ -41,26 +40,47 @@ body {
 
 .headyfind {
     flex: 1;
-    padding: 40px 0px 0px 0px;
+    padding: 3vw 0px 0px 0px;
+}
+
+.headytag {
+    font-size: 1.5vw;
 }
 
 .headyinsta {
-    width: 35px;
-    margin-right: 130px;
-    padding: 30px 0px 0px 0px;
+    width: 3vw;
+    margin-right: 10vw;
+    padding: 2.5vw 0px 0px 0px;
     object-fit: fill;
 }
 
 .headyinsta img {
-    width: 35px;
-    height: 35px;
+    width: 3vw;
+    height: 3vw;
 }
 
 /* Body Div Stuff */
 
 .bodypot {
-    margin: 0px 145px 130px 145px;
+    margin: 0px 11vw 10vw 11vw;
 }
+
+.bodypot a {
+    text-decoration: none;
+    color: #000;
+}
+
+.italian {
+    font-style: italic;
+}
+
+.avenirl {
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+
+/* For Home Page */
 
 .homeimg {
     object-fit: fill;
@@ -73,8 +93,28 @@ body {
 
 .subtitle {
     margin: 0px;
+    font-size: 1.5vw;
 }
 
-.italian {
-    font-style: italic;
+/* For About Page */
+
+.flexyb {
+    display: flex;
+    flex-direction: row;
+}
+
+.abfill {
+    flex: 1;
+    height: 60vh;
+}
+
+.imging {
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.imging img {
+    width: 100%;
+    height: 100%;
 }
