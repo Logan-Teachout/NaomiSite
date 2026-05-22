@@ -5,7 +5,9 @@ body {
     font-weight: 300;
 }
 
+
 /* Header Div Stuff */
+
 
 .heady {
     background-color: #FFF;
@@ -44,7 +46,7 @@ body {
 }
 
 .headytag {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 .headyinsta {
@@ -59,7 +61,9 @@ body {
     height: 3vw;
 }
 
+
 /* Body Div Stuff */
+
 
 .bodypot {
     margin: 0px 11vw 10vw 11vw;
@@ -80,7 +84,9 @@ body {
     font-size: 1.5vw;
 }
 
+
 /* For Home Page */
+
 
 .homeimg {
     object-fit: fill;
@@ -93,10 +99,57 @@ body {
 
 .subtitle {
     margin: 0px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
+
+/* For Contact Page */
+
+
+.iob {
+    width: 30vw;
+    height: 3vw;
+    margin: 1vw;
+    border-width: 2px;
+    font-family: Arial;
+    font-weight: 700;
+    background-color: #DDD;
+}
+
+.iobm {
+    width: 30vw;
+    height: 10vw;
+    margin: 1vw;
+    border-width: 2px;
+    font-family: Arial;
+    font-weight: 700;
+    background-color: #DDD;
+}
+
+::placeholder {
+    color: #000;
+    opacity: 1;
+    font-size: 1.7vw;
+    text-align: justify;
+}
+
+.snd {
+    background-color: #DDD;
+    border-width: 2px;
+    height: 3vw;
+    margin-left: 1vw;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 1.7vw;
+}
+
+.snd:hover {
+    cursor: pointer;
+}
+
+
 /* For About Page */
+
 
 .flexyb {
     display: flex;
@@ -117,4 +170,101 @@ body {
 .imging img {
     width: 100%;
     height: 100%;
+}
+
+
+/* For Works Page */
+
+
+.TOHT {
+    margin-top: 5vh;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 1.7vw;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1vw;
+    row-gap: 1vw;
+}
+
+/* For smaller screens */
+
+@media (max-width: 900px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1vw;
+        row-gap: 1vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1vw;
+        row-gap: 1vw;
+    }
+}
+
+.piece{
+    background-color: transparent;
+    cursor: grab;
+    border: none;
+}
+
+.piece img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease;
+}
+
+.piece:hover img {
+    transform: scale(1.05);
+}
+
+/* Click to make big and tell title */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 3vh;
+    text-align: center;
+    cursor: zoom-out;
+}
+
+.lightbox.show {
+    display: flex;
+}
+    
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    color: #000;
+}
+    
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+    
+.lightbox-content p {
+    font-family: Raleway;
+    font-weight: 300;
+    margin-top: 3vh;
+    font-size: 4vh;
 }

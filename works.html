@@ -8,9 +8,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
 
-    <title> Naomi Santoki </title>
+    <title> Naomi Santoki | Works</title>
 
-    <!-- Technically "Raleway" but looks like Avenir so should work -->
     <link id="googleFonts" 
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
     rel="stylesheet" type="text/css">
@@ -50,6 +49,85 @@
         </div>
 
     </div>
+
+    <!-- Body Gallery -->
+    <div class="bodypot">
+
+        <!-- 
+        Use these h3 tags to break apart with titles
+        -->
+        <h3 class="TOHT"> 1851 </h3>
+
+        <!-- 
+        Then just copy this style and fill in the images as with the home page,
+        and use the image as the data-img and then put your title in data-title.
+        -->
+        <div class="gallery">
+
+            <button class="piece" data-img="images/RoadtoBruma.jpg" data-title="Title">
+                <img src="images/RoadtoBruma.jpg" alt="">
+            </button>
+
+            <button class="piece" data-img="images/RoadtoBruma.jpg" data-title="Title">
+                <img src="images/RoadtoBruma.jpg" alt="">
+            </button>
+
+            <button class="piece" data-img="images/RoadtoBruma.jpg" data-title="Title">
+                <img src="images/RoadtoBruma.jpg" alt="">
+            </button>
+
+            <button class="piece" data-img="images/RoadtoBruma.jpg" data-title="Title">
+                <img src="images/RoadtoBruma.jpg" alt="">
+            </button>
+
+        </div>
+
+        <h3 class="TOHT"> 1776 </h3>
+
+        <div class="gallery">
+
+            <button class="piece" data-img="images/RoadtoBruma.jpg" data-title="Title">
+                <img src="images/RoadtoBruma.jpg" alt="">
+            </button>
+
+            <button class="piece" data-img="images/RoadtoBruma.jpg" data-title="Title">
+                <img src="images/RoadtoBruma.jpg" alt="">
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Do not touch this bc it's scripting and you don't need to change it -->
+    <!-- Scripting -->
+
+      <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+  
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+  
+    document.querySelectorAll('.piece').forEach(button => {
+      button.addEventListener('click', () => {
+        const imgSrc = button.getAttribute('data-img');
+        const caption = button.getAttribute('data-title');
+  
+        lightboxImg.src = imgSrc;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add('show');
+      });
+    });
+  
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.remove('show');
+    });
+  </script>
     
 </body>
 
