@@ -218,6 +218,7 @@ body {
 
 .piece{
     background-color: transparent;
+    object-fit: contain;
     cursor: grab;
     border: none;
 }
