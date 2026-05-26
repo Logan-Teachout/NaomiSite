@@ -151,6 +151,12 @@ body {
 /* For About Page */
 
 
+.avenirlb {
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 1vw;
+}
+
 .flexyb {
     display: flex;
     flex-direction: row;
